@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>S1C PPMHSS</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="S1C - Website" />
+  <meta name="author" content="merkulove" />
+  <meta name="keywords" content="" />
+  <link rel="icon" href="assets/img/favicon.jpg" />
+  <link rel="stylesheet" type="text/css" href="assets/css/main.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/button.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="path-to/slick.css">
+  <link rel="stylesheet" type="text/css" href="path-to/slick-theme.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="path-to/slick.min.js"></script>
+
+
+<body>
+
+  <div id="Home" class="wrapper">
+    <div class="main-section">
+      <header>
+        <div class="container">
+          <div class="header-content d-flex flex-wrap align-items-center">
+            <div class="logo">
+              <!-- <a href="" title=""><img src="assets/img/logo.png" alt="" srcset="assets/img/01_Logo_2x.png 2x" /></a> -->
+              <img src="assets/img/logo.png" alt="">
+            </div>
+            <!--logo end-->
+            <ul class="contact-add d-flex flex-wrap">
+              <li>
+                <div class="contact-info">
+                  <img src="assets/img/icon1.png" alt="" />
+                  <div class="contact-tt">
+                    <h4>Call</h4>
+                    <span>+91 483 2711374</span>
+                  </div>
+                </div>
+                <!--contact-info end-->
+              </li>
+              <li>
+                <div class="contact-info">
+                  <img src="assets/img/icon2.png" alt="" />
+                  <div class="contact-tt">
+                    <h4>Work Time</h4>
+                    <span>9 AM - 6 PM</span>
+                  </div>
+                </div>
+                <!--contact-info end-->
+              </li>
+              <li>
+                <div class="contact-info">
+                  <img src="assets/img/icon3.png" alt="" />
+                  <div class="contact-tt">
+                    <h4>Address</h4>
+                    <span>Kottukkara, Kondoty, Kerala 673638</span>
+                  </div>
+                </div>
+                <!--contact-info end-->
+              </li>
+            </ul>
+            <!--contact-information end-->
+            <!-- <div class="menu-btn">
+              <a href="#"><span class="bar1"></span> <span class="bar2"></span>
+                <span class="bar3"></span></a>
+            </div> -->
+            <!--menu-btn end-->
+          </div>
+          <!--header-content end-->
+          <div class="navigation-bar d-flex flex-wrap align-items-center">
+            <nav>
+              <ul>
+                <li>
+                  <a class="active" href="#Home" title="">Home</a>
+                </li>
+                <li>
+                  <a href="#Upload-image" title="">Upload image</a>
+
+                </li>
+                <li>
+                  <a href="#Gallery" title="">Gallery</a>
+
+                </li>
+                <li>
+                  <a href="#Teacher" title="">Teachers</a>
+
+                </li>
+                <li>
+                  <a href="#contact" title="">Contact</a>
+
+                </li>
+
+            </nav>
+
+
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script>
+              $(document).ready(function () {
+                var a = $("#cursor"),
+                  b = $("#cursor2"),
+                  c = $("#cursor3");
+
+                $("body").on("mousemove", function (n) {
+                  a.css({ 'left': n.clientX + "px" });
+                  a.css({ 'top': n.clientY + "px" });
+                  b.css({ 'left': n.clientX + "px" });
+                  b.css({ 'top': n.clientY + "px" });
+                  c.css({ 'left': n.clientX + "px" });
+                  c.css({ 'top': n.clientY + "px" });
+                });
+
+                function n(t) {
+                  b.addClass("hover");
+                  c.addClass("hover");
+                }
+
+                function s(t) {
+                  b.removeClass("hover");
+                  c.removeClass("hover");
+                }
+
+                s();
+
+                $(".hover-target").on('mouseover', n);
+                $(".hover-target").on('mouseout', s);
+              });
+            </script>
+
+            <div class="no">
+              <div class='cursor' id="cursor"></div>
+              <div class='cursor2' id="cursor2">
+                <div class="ball"></div>
+              </div>
+              <div class='cursor3' id="cursor3"></div>
+            </div>
+            <style>
+              .cursor,
+              .cursor2,
+              .cursor3 {
+                position: fixed;
+                border-radius: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                pointer-events: none;
+                left: -100px;
+                top: 50%;
+                transition: all .4s linear;
+              }
+
+              .cursor {
+                background-color: red;
+                z-index: 109;
+                height: 8px;
+                width: 8px;
+              }
+
+              .cursor2,
+              .cursor3 {
+                height: 50px;
+                width: 50px;
+                z-index: 108;
+                transition: all 0.1s ease-out;
+              }
+
+              .cursor2.hover,
+              .cursor3.hover {
+                transform: scale(1.10) translateX(-35%) translateY(-35%);
+                border: none;
+                background: transparent;
+              }
+
+              .cursor2.hover {
+                background: rgba(255, 255, 255, 0.3);
+              }
+
+
+              .ball {
+                height: 50px;
+                width: 50px;
+                cursor: pointer;
+                display: block;
+                border-radius: 50%;
+                border: 1px solid #f37335;
+                z-index: 100;
+                transition: all .3s linear;
+              }
+            </style>
+            <!--nav end-->
+            <ul class="social-links ml-auto">
+              <li>
+                <a href="https://www.facebook.com/ppmhsschoolkottukkara" target="blank" title=""><i
+                    class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UCQbX9zoWunm5J8ltf-5Uahw" target="blank" title=""><i
+                    class="fa-brands fa-youtube"></i></i></a>
+              </li>
+              <li>
+                <a href="https://instagram.com/ppmhsskottukkara?igshid=OGQ5ZDc2ODk2ZA==" target="blank" title=""><i
+                    class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <!--navigation-bar end-->
+        </div>
+      </header>
+      <!--header end-->
+      <!-- <div class="responsive-menu ">
+         
+        <ul>
+          <li><a href="#Home" title="">Home</a></li>
+          <li><a href="#contact" title="">Onam</a></li>
+          <li><a href="#Gallery" title="">Gallery</a></li>
+          <li><a href="#Teacher" title="">Teachers</a></li>
+
+        </ul>
+      </div> -->
+      <!--responsive-menu end-->
+      <section class="main-banner">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-7 col-md-7">
+              <div class="banner-text wow fadeInLeft" data-wow-duration="1000ms">
+                <h2>We presenting the world of <span>computer</span></h2>
+                <p >
+                  "We S1C presenting the world of computer Celebrating Onam Virtually: Cultivating Joy, Unity, and
+                  Tradition in the Digital Age. Embrace the spirit of Onam through online gatherings, vibrant
+                  decorations, and heartwarming connections."
+                </p>
+                <!-- Codes by HTML.am -->
+
+                <!-- CSS Code -->
+                <style type="text/css" scoped>
+                  .GeneratedLink {
+                    display: block;
+                    margin: 0 auto; /* Center horizontally */
+                    width: fit-content;
+                    background-color: #f37335;
+                    color: white;
+                    font-size: 14.23px;
+                    padding: 10px 15px;
+                    border: 0;
+                    font-size: larger;
+                    font-style: italic;
+                    text-align: center;
+                    position: relative;
+                    top: -44px;
+                    border-radius: 10px;
+                  }
+                </style>
+
+                <!-- HTML Code -->
+
+
+              </div>
+            </div>
+
+            <div class="col-lg-5 col-md-5">
+              <div class="banner-img wow zoomIn " data-wow-duration="1000ms">
+                <img id="ban" src="assets/img/banner-img.png" alt="" />
+              </div>
+              <!--banner-img end-->
+              <div class="elements-bg wow zoomIn" data-wow-duration="1000ms"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--main-banner end-->
+
+    </div>
+    <!--main-section end-->
+    <section class="about-us-section">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>Welcome to <span>S1C</span></h2>
+          <p>
+            Welcome to a world of possibilities, where knowledge meets inspiration and community thrives. Join us on
+            this exciting journey!
+          </p>
+        </div>
+        <!--section-title end-->
+        <div class="about-sec">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="abt-col wow fadeInUp" data-wow-duration="1000ms">
+                  <img src="assets/img/icon5.png" alt="" />
+                  <h3>Awesome Teachers</h3>
+                  <p>Dedicated educators fostering growth, curiosity, and knowledge in students.</p>
+                </div>
+                <!--abt-col end-->
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="abt-col wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="200ms">
+                  <img src="assets/img/icon7.png" alt="" />
+                  <h3>Guidance&Support Center </h3>
+                  <p>
+                    Comprehensive resources for academic, personal, and career guidance and support.
+                  </p>
+                </div>
+                <!--abt-col end-->
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="abt-col wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
+                  <img src="assets/img/icon8.png" alt="" />
+                  <h3>Best Programm course </h3>
+                  <p>
+                    Innovative curriculum for comprehensive learning, skills, and personal growth.
+                  </p>
+                </div>
+                <!--abt-col end-->
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="abt-col wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
+                  <img src="assets/img/icon9.png" alt="" />
+                  <h3>Student Support Service</h3>
+                  <p>
+                    Tailored assistance, resources, and care fostering student success and well-being.
+                  </p>
+                </div>
+                <!--abt-col end-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--about-rw end-->
+        <div id="Gallery" class="abt-img">
+          <ul class="masonary">
+            <li class="width1 wow zoomIn" data-wow-duration="1000ms">
+              <a href="assets/img/gallery1.jpg" data-group="set1" title="" class="html5lightbox"><img
+                  src="assets/img/gallery1.jpg" alt="" /></a>
+            </li>
+            <li class="width2 wow zoomIn" data-wow-duration="1000ms">
+              <a href="assets/img/gallery2.jpg" data-group="set1" title="" class="html5lightbox"><img
+                  src="assets/img/gallery2.jpg" alt="" /></a>
+            </li>
+            <li class="width3 wow zoomIn" data-wow-duration="1000ms">
+              <a href="assets/img/gallery4.jpg" data-group="set1" title="" class="html5lightbox"><img
+                  src="assets/img/gallery4.jpg" alt="" /></a>
+            </li>
+            <li class="width4 wow zoomIn" data-wow-duration="1000ms">
+              <a href="assets/img/gallery6.jpg" data-group="set1" title="" class="html5lightbox"><img
+                  src="assets/img/gallery6.jpg" alt="" /></a>
+            </li>
+            <li class="width5 wow zoomIn" data-wow-duration="1000ms">
+              <a href="assets/img/gallery8.jpg" data-group="set1" title="" class="html5lightbox"><img
+                  src="assets/img/gallery8.jpg" alt="" /></a>
+            </li>
+            <li class="width6 wow zoomIn" data-wow-duration="1000ms">
+              <a href="assets/img/gallery7.jpg" data-group="set1" title="" class="html5lightbox"><img
+                  src="assets/img/gallery7.jpg" alt="" /></a>
+            </li>
+            <li class="width7 wow zoomIn" data-wow-duration="1000ms">
+              <a href="assets/img/gallery9.jpg" data-group="set1" title="" class="html5lightbox"><img
+                  src="assets/img/gallery9.jpg" alt="" /></a>
+            </li>
+            <li class="width8 wow zoomIn" data-wow-duration="1000ms">
+              <a href="assets/img/gallery10.jpg" data-group="set1" title="" class="html5lightbox"><img
+                  src="assets/img/gallery10.jpg" alt="" /></a>
+            </li>
+            <li class="width9 wow zoomIn" data-wow-duration="1000ms">
+              <a href="assets/img/gallery3.jpg" data-group="set1" title="" class="html5lightbox"><img
+                  src="assets/img/gallery3.jpg" alt="" /></a>
+            </li>
+            <li class="width10 wow zoomIn" data-wow-duration="1000ms">
+              <a href="assets/img/gallery5.jpg" data-group="set1" title="" class="html5lightbox"><img
+                  src="assets/img/gallery5.jpg" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+        <!-- abt-img end-->
+      </div>
+    </section>
+    <!--about-us-section end-->
+
+
+    <!--classes-section end-->
+    <section class="teachers-section">
+      <div class="container">
+        <div id="Teacher" class="section-title text-center">
+          <h2>Our Awesome<br />Teachers</h2>
+          <p>
+            "Guiding minds, igniting futures – our awesome teachers light the way."
+          </p>
+        </div>
+        <section class="classes-section">
+          <div class="container">
+            <!--sec-title end-->
+            <div class="classes-sec">
+              <div class="row classes-carousel">
+                <div class="col-lg-3">
+                  <div class="classes-col wow fadeInUp" data-wow-duration="1000ms">
+                    <div class="sir">
+                      <img src="assets/img/img5.jpg" alt="" style="border-radius: 20px;" class="w-100" />
+                    </div>
+                    <div class="teacher-in">
+                      <h3>
+                        <a href="" title="">Faisal sir</a>
+                      </h3>
+                      <span>computer science</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- 
+                <div class="col-lg-3">
+                  <div class="classes-col wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="200ms">
+                    <div class="sir">
+                      <img src="assets/img/img2.jpg" alt="" class="w-100" />
+                      <a href="contacts.html" title="" class="crt-btn"><img src="assets/img/icon10.png" alt="" /></a>
+                    </div>
+                    
+                    <div class="class-info">
+                      <h3>
+                        <a href="class-single.html" title="">Natural Sciences & Mathematics Courses</a>
+                      </h3>
+                      <span>Mon-Fri</span> <span>10 AM - 12 AM</span>
+                      <div class="d-flex flex-wrap align-items-center">
+                        <div class="posted-by">
+                          <img src="assets/img/ico.png" alt="" />
+                          <a href="#" title="">Gypsy Hardinge</a>
+                        </div>
+                        <strong class="price">$67</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+                <!-- <div class="col-lg-3">
+                  <div class="classes-col wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
+                    <div class="sir">
+                      <img src="assets/img/img3.jpg" alt="" class="w-100" />
+                      <a href="contacts.html" title="" class="crt-btn"><img src="assets/img/icon10.png" alt="" /></a>
+                    </div>
+                    <div class="class-info">
+                      <h3>
+                        <a href="class-single.html" title="">Environmental Studies & Earth Sciences</a>
+                      </h3>
+                      <span>Mon-Fri</span> <span>10 AM - 12 AM</span>
+                      <div class="d-flex flex-wrap align-items-center">
+                        <div class="posted-by">
+                          <img src="assets/img/ico.png" alt="" />
+                          <a href="#" title="">Margje Jutten</a>
+                        </div>
+                        <strong class="price">$89</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+                <!-- <div class="col-lg-3">
+                  <div class="classes-col wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="sir">
+                      <img src="assets/img/img4.jpg" alt="" class="w-100" />
+                      <a href="contacts.html" title="" class="crt-btn"><img src="assets/img/icon10.png" alt="" /></a>
+                    </div>
+                    <div class="class-info">
+                      <h3>
+                        <a href="class-single.html" title="">Hospitality, Leisure & Sports Courses</a>
+                      </h3>
+                      <span>Mon-Fri</span> <span>10 AM - 12 AM</span>
+                      <div class="d-flex flex-wrap align-items-center">
+                        <div class="posted-by">
+                          <img src="assets/img/ico.png" alt="" />
+                          <a href="#" title="">Hubert Franck</a>
+                        </div>
+                        <strong class="price">$67</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+
+                <div class="col-lg-3">
+                  <div class="classes-col wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="200ms">
+                    <div class="sir">
+                      <img src="assets/img/img2.jpg" style="border-radius: 20px; alt="" class=" w-100" />
+                    </div>
+                    <div class="teacher-in">
+                      <h3>
+                        <a href="" title="">Jamaludheen sir </a>
+                      </h3>
+                      <span>Maths</span>
+                    </div>
+                  </div>
+                  <!--classes-col end-->
+                </div>
+                <div class="col-lg-3">
+                  <div class="classes-col wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
+                    <div class="sir">
+                      <img src="assets/img/img8.jpg" style="border-radius: 20px;" alt="" class="w-100" />
+                    </div>
+                    <div class="teacher-in">
+                      <h3>
+                        <a href="" title="">Firoz sir </a>
+                      </h3>
+                      <span>chemistry</span>
+                    </div>
+                  </div>
+                  <!--classes-col end-->
+                </div>
+                <div class="col-lg-3">
+                  <div class="classes-col wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="sir">
+                      <img src="assets/img/img.jpg" style="border-radius: 20px;" alt="" class="w-100" />
+                    </div>
+                    <div class="teacher-in">
+                      <h3>
+                        <a href="" title="">Jaleel sir </a>
+                      </h3>
+                      <span>Principal</span>
+                    </div>
+                  </div>
+                  <!--classes-col end-->
+                </div>
+                <div class="col-lg-3">
+                  <div class="classes-col wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="800ms">
+                    <div class="sir">
+                      <img src="assets/img/img7.jpg" style="border-radius: 20px;" alt="" class="w-100" />
+                    </div>
+                    <div class="teacher-in">
+                      <h3>
+                        <a href="" title="">Basil sir</a>
+                      </h3>
+                      <span>physics </span>
+                    </div>
+                  </div>
+                  <!--classes-col end-->
+                </div>
+                <div class="col-lg-3">
+                  <div class="classes-col wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="1000ms">
+                    <div class="sir">
+                      <img src="assets/img/img9.jpg" style="border-radius: 20px; alt="" class=" w-100" />
+                    </div>
+                    <div class="teacher-in">
+                      <h3>
+                        <a href="" title="">Rishana teacher</a>
+                      </h3>
+                      <span>English</span>
+                    </div>
+                  </div>
+                  <!--classes-col end-->
+                </div>
+              </div>
+            </div>
+            <!--classes-sec end-->
+          </div>
+
+        </section>
+        <!--section-title end-->
+        
+      </div>
+      <!--teachers end-->
+  </div>
+  </section>
+
+
+
+
+  <!--course-section end-->
+
+  <section id="contact" class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-sec">
+        <div class="row align-items-center">
+          <div class="col-lg-4">
+            <div class="newsz-ltr-text">
+              <h2>Join us<br />and stay tuned!</h2>
+             
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <form class="newsletter-form">
+              <div class="row" id="contact">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <input type="text" name="name" id="name" placeholder="Name" required />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <select id="class" required>
+                      <option value="" disabled selected>Class</option>
+                      <option>+1</option>
+                      <option>+2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <input type="text" name="division" id="division" placeholder="Division" required />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div class="form-group">
+                      <textarea name="message" id="message" placeholder="Message"></textarea>
+                    </div>
+                  </div>
+                  <button type="button" id="sendMessage" class="btn-default">Send <i
+                    class="fa fa-long-arrow-alt-right"></i></button >
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+   
+ 
+  <script>
+    document.getElementById("sendMessage").addEventListener("click", function () {
+      var name = encodeURIComponent(document.getElementById("name").value);
+      var selectedClass = encodeURIComponent(document.getElementById("class").value);
+      var division = encodeURIComponent(document.getElementById("division").value);
+      var message = encodeURIComponent(document.getElementById("message").value);
+
+      if (name && selectedClass && division) {
+        var fullMessage = "Name: " + name + "%0A" + "Class: " + selectedClass + "%0A" + "Division: " + division + "%0A" + "Message: " + message;  // Adjusted line
+        var whatsappLink = "https://api.whatsapp.com/send?phone=7559893612&text=" + fullMessage;
+
+        window.open(whatsappLink, "_blank");
+      } else {
+        alert("Please fill out all required fields.");
+      }
+    });
+  </script>
+
+
+
+
+
+
+ 
+
+  <!--newsletter-sec end-->
+  <footer id="Upload-image">
+    <div class="container">
+      <div class="top-footer">
+        <a class="GeneratedLink" href="https://www.dropbox.com/request/4u5n8Sh1dUjKRQVyG29w" target="_blank">Upload
+          image</a>
+        <div class="row">
+          
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="widget widget-about">
+              
+              <img src="assets/img/logo.png" alt="" />
+              <p>
+                The best way to experience our wide collection of sweet memories is to visit our campus and be a part
+                of it.
+
+
+              </p>
+            </div>
+            <!--widget-about end-->
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="widget widget-contact">
+              <ul class="contact-add">
+                <li>
+                  <div class="contact-info">
+                    <img src="assets/img/icon1.png" alt="" />
+                    <div class="contact-tt">
+                      <h4>Call</h4>
+                      <span>+91 483 2711374</span>
+                    </div>
+                  </div>
+                  <!--contact-info end-->
+                </li>
+                <li>
+                  <div class="contact-info">
+                    <img src="assets/img/icon2.png" alt="" />
+                    <div class="contact-tt">
+                      <h4>Work Time</h4>
+                      <span>9 AM - 6 PM</span>
+                    </div>
+                  </div>
+                  <!--contact-info end-->
+                </li>
+                <li>
+                  <div class="contact-info">
+                    <img src="assets/img/icon3.png" alt="" />
+                    <div class="contact-tt">
+                      <h4>Address</h4>
+                      <span>Kottukkara, Kondoty, Kerala 673638</span>
+                    </div>
+                  </div>
+                  <!--contact-info end-->
+                </li>
+              </ul>
+            </div>
+            <!--widget-contact end-->
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="widget widget-links">
+              <h3 class="widget-title">Quick Links</h3>
+              <ul>
+                <li><a href="#Home" title="">Home</a></li>
+                <li><a href="#Upload-image" title="">Upload image</a></li>
+                <li>
+                  <a href="#Gallery" title="">Gallery</a>
+                </li>
+                <li><a href="#Teacher" title="">Teacher</a></li>
+                <li><a href="#contact" title="">Contact</a></li>
+
+              </ul>
+            </div>
+            <!--widget-links end-->
+          </div>
+        </div>
+      </div>
+      <!--top-footer end-->
+      <div class="bottom-footer">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <p>© Copyrights 2023 S1C All rights reserved S1C</p>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <ul class="social-links">
+              <li>
+                <a href="https://www.facebook.com/ppmhsschoolkottukkara" target="blank" title=""><i
+                    class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UCQbX9zoWunm5J8ltf-5Uahw" target="blank" title=""><i
+                    class="fa-brands fa-youtube"></i></i></a>
+              </li>
+              <li>
+                <a href="https://instagram.com/ppmhsskottukkara?igshid=OGQ5ZDc2ODk2ZA==" target="blank" title=""><i
+                    class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--bottom-footer end-->
+    </div>
+  </footer>
+  <!--footer end-->
+  </div>
+  <script src="assets/js/bundle.min.js"></script>
+  <script src="assets/js/button.min.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180910402-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-180910402-1");
+  </script>
+</body>
+
+</html>

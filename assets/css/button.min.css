@@ -1,0 +1,62 @@
+@-webkit-keyframes mdp-float-aura {
+  from {
+    box-shadow: 0 0 0 -1px var(--hmp-color-75), 0 0 0 -1px var(--hmp-color-50),
+      0 0 0 -1px var(--hmp-color-25);
+  }
+  to {
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0),
+      0 0 0 30px rgba(255, 255, 255, 0), 0 0 0 45px rgba(255, 255, 255, 0);
+  }
+}
+@keyframes mdp-float-aura {
+  from {
+    box-shadow: 0 0 0 -1px var(--hmp-color-75), 0 0 0 -1px var(--hmp-color-50),
+      0 0 0 -1px var(--hmp-color-25);
+  }
+  to {
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0),
+      0 0 0 30px rgba(255, 255, 255, 0), 0 0 0 45px rgba(255, 255, 255, 0);
+  }
+}
+@-webkit-keyframes mdp-float-init {
+  0% {
+    opacity: 0;
+    transform: scale(0.25);
+  }
+  50% {
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  90% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes mdp-float-init {
+  0% {
+    opacity: 0;
+    transform: scale(0.25);
+  }
+  50% {
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  90% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+
